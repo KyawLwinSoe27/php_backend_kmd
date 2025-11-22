@@ -71,3 +71,151 @@ body, html {
         font-size: 16px;
     }
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+.register-body {
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.register-container {
+    background-color: #fff;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 360px;
+    text-align: center;
+}
+
+
+.register-title {
+    color: #2d3436;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+
+.register-form {
+    text-align: left;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-label {
+    display: block;
+    font-weight: 600;
+    color: #2d3436;
+    margin-bottom: 6px;
+}
+
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b2bec3;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-input:focus {
+    border-color: #0984e3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(9, 132, 227, 0.4);
+}
+
+
+.checkbox-group {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.form-checkbox {
+    margin-right: 6px;
+    transform: scale(1.1);
+}
+
+.checkbox-label {
+    font-size: 14px;
+    color: #555;
+}
+
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btn {
+    width: 48%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #0984e3;
+}
+
+.btn-primary:hover {
+    background-color: #74b9ff;
+}
+
+.btn-secondary {
+    background-color: #636e72;
+}
+
+.btn-secondary:hover {
+    background-color: #b2bec3;
+}
+
+
+.login-link {
+    display: block;
+    margin-top: 18px;
+    font-size: 14px;
+    color: #2d3436;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.login-link:hover {
+    color: #0984e3;
+}
+
+
+.navbar ul li a {
+    text-decoration: none;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li{
+    display: inline;
+}
+
+.navbar ul li a:hover{
+    color: red;
+    font-weight: bold;
+}

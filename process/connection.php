@@ -7,4 +7,3 @@ $db='l5dc115db';
 
 $connection=mysqli_connect($localhost,$userName,$password,$db);
 
-?>

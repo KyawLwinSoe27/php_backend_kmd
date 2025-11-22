@@ -1,4 +1,4 @@
-
+global$connection;
 <?php 
 
 include('connection.php');

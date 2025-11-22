@@ -7,56 +7,53 @@ include('process/registerProcess.php');
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Register</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css?v=<?php echo time(); ?>">
 </head>
-<body>
+<body class="register-body">
 
-	<h1>Register</h1>
+<div class="register-container">
+    <h1 class="register-title">Register</h1>
 
-	<form action="process/registerProcess.php" method="POST">
-		
-		<label>User Name:</label>
-		<input type="text" name="txtUserName">
+    <form action="process/registerProcess.php" method="POST" class="register-form">
 
-		<br><br>
+        <div class="form-group">
+            <label class="form-label">User Name:</label>
+            <input type="text" name="txtUserName" class="form-input">
+        </div>
 
-		<label>User Email:</label>
-		<input type="text" name="txtUserEmail">
+        <div class="form-group">
+            <label class="form-label">User Email:</label>
+            <input type="text" name="txtUserEmail" class="form-input">
+        </div>
 
-		<br><br>	
+        <div class="form-group">
+            <label class="form-label">Password:</label>
+            <input type="password" id="myInput" name="txtUserPassword" class="form-input">
+            <div class="checkbox-group">
+                <input type="checkbox" id="showPassword" onclick="showHide()" class="form-checkbox">
+                <label for="showPassword" class="checkbox-label">Show Password</label>
+            </div>
+        </div>
 
-		<label>Password:</label>
-		<input type="Password" id="myInput" name="txtUserPassword">	
-		<input type="checkbox" name=""
-		onclick="showHide()" >Show Password
+        <div class="button-group">
+            <input type="submit" name="btnRegister" value="Register" class="btn btn-primary">
+            <input type="reset" value="Clear" class="btn btn-secondary">
+        </div>
 
-		<script>
-			function showHide() {
-				// body...
-				var x=document.getElementById('myInput');
-				if (x.type != 'text') {
-					x.type='text';
-				}
-				else{
-					x.type='password';
-				}
-			}
-		</script>
+    </form>
 
-		<br><br>
+    <a href="login.php" class="login-link">Have an account? Login</a>
+</div>
 
-		<input type="submit" name="btnRegister"
-		value="Register">
-
-		<input type="reset" name="" value="Clear">
-
-	</form>
-
-	<br><br>
-
-	<a href="login.php">Have an account? Login</a>
+<script>
+    function showHide() {
+        var x = document.getElementById('myInput');
+        x.type = (x.type === 'password') ? 'text' : 'password';
+    }
+</script>
 
 </body>
 </html>

@@ -4,9 +4,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>Home</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css?v=<?php echo time(); ?>">
+
 </head>
 <body>
+
+<?php include('navbar.php') ?>
 
 	<h1>Welcome Home Page</h1>
 
